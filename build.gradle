@@ -77,7 +77,7 @@ task cucumberTest(type: Test) {
         javaexec {
             main = "cucumber.api.cli.Main"
             classpath = configurations.cucumberTestRuntime + sourceSets.main.output + sourceSets.test.output
-            args = ['--plugin', 'pretty', '--glue', 'stepdefs.hellocucumber', 'src/cucumberTest/resources']
+            args = ['--plugin', 'pretty', '--glue', 'src/cucumberTest/resources']
         }
     }
 }
